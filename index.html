@@ -1,0 +1,220 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>Home</title>
+
+<style type="text/css">
+body {
+  margin:0px;
+  padding:0px;
+  background:gainsboro;
+}
+
+#logo {
+  margin-top: 5px;
+  text-align: center;
+  width:100%;
+  background: WhiteSmoke;
+}
+
+#col {
+  position:absolute;
+  top:80px;
+  width:25%;
+  height:90%;
+  background: White;
+}
+
+h2 {
+  margin-left: 5px;
+  text-align:left;
+}
+
+ul li {margin-bottom:20px;}
+
+ol.device-list li {margin-bottom: 5px;}
+
+ul {
+  list-style:none;
+}
+
+li {
+  font-family: Helvetica;
+  font-size: medium;
+}
+
+/* div as scrollable list
+#devices {
+  overflow-y: scroll;
+  height: 120px;
+  border-style: inset;
+  margin: 5px;
+}
+*/
+
+#hideCheckbox {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#hideCheckbox:checked ~ #devices {
+  display: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<div>
+
+<div id="logo">
+
+<h1>Home</h1>
+</div>
+
+<div id="col" style="left: 0px;">
+
+<h2>News</h2>
+<ul>
+<!--
+<li> <a href="http://cnn.com/">CNN</a> </li>
+<li> <a href="https://www.cbsnews.com/">CBS News</a> </li>
+<li> <a href="http://msnbc.com/">MSNBC</a> </li>
+-->
+<li> <a href="https://nbcnews.com/">NBC News</a> </li>
+<li> <a href="http://investors.com/">Investor's Business Daily</a> </li>
+<li> <a href="http://slashdot.org/">Slashdot</a> </li>
+</ul>
+
+<h2>Torrents</h2>
+<ul>
+<li> <a href="http://theempire.click">The Empire (BT)</a> </li>
+<li> <a href="http://thegeeks.click">The Geeks (BT)</a> </li>
+<li> <a href="http://theshow.click">The Show (BT)</a> </li>
+<li> <a href="http://www.dimeadozen.org/account-login.php">Dime (Concerts)</a> </li>
+</ul>
+
+<h2>Media</h2>
+<ul>
+<li> <a href="http://www.youtube.com">Youtube</a> </li>
+<li> <a href="http://www.youtube.tv">Youtube TV</a> </li>
+<li> <a href="https://music.youtube.com/library/uploaded_albums">Youtube Music</a> </li>
+</ul>
+
+</div>
+
+<div id="col" style="background: WhiteSmoke; left: 25%;">
+<h2>Hardware</h2>
+<ul>
+<li> <a href="https://dongknows.com/">Dong Knows Tech</a> </li>
+<li> <a href="http://www.tomshardware.com/">Tom's Hardware</a> </li>
+<li> <a href="https://pcpartpicker.com/">PC Part Picker</a> </li>
+</ul>
+
+<h2>Retirement</h2>
+<ul>
+<li> <a href="http://www.early-retirement.org/forums/">Early Retirement</a> </li>
+<li> <a href="http://www.bogleheads.org/">Bogleheads</a> </li>
+<li> <a href="https://www.flyertalk.com/forum/trusted-travelers-732/">FlyerTalk</a> </li>
+</ul>
+
+<h2>Services</h2>
+<ul>
+<li> <a href="http://10.0.10.210:32400">Plex</a> </li>
+<li> <a href="https://ottofy.synology.me:5001/webman/index.cgi">NAS</a> and
+     <a href="https://mannie2137.synology.me:5001/webman/index.cgi">NASBACK</a>
+</li>
+<li> <a href="http://10.0.60.100">Obi Status</a> </li>
+<li> <a href="https://www.voip.ms/m/cdr.php">VOIP.MS</a> </li>
+<li> <a href="http://10.0.200.1">Unifi Cloud Gateway Fiber</a> </li>
+<li> <a href="http://10.0.50.100">Hubitat</a> </li>
+<li> <a href="http://10.0.10.210:3000">Open Speedtest</a> </li>
+</ul>
+
+<h2>Device Static IPs</h2>
+<input type="checkbox" checked id="hideCheckbox" />
+<label for="hideCheckbox">(show devices)</label>
+
+<div id="devices">
+<ol class="device-list">
+<li> <a href="http://10.0.200.150">Mikrotik crs-304 10g 4 port switch</a> </li>
+<li> <a href="http://10.0.200.151">zyxel 10g 4 port / IOT</a> </li>
+<li> <a href="http://10.0.200.190">Mokerlink 2.5g 8 port switch</a> </li>
+<li> <a href="http://10.0.200.195">Mokerlink 10g 8 port switch</a> </li>
+<li> <a href="http://10.0.200.185">Binardat 2.5g 4 port switch</a> </li>
+<li> <a href="http://10.0.200.215">tp-link EAP670 access point</a> </li>
+<li> <a href="https://10.0.0.1">xfinity cable modem</a> </li>
+
+<!--
+<li> <a href="https://192.168.100.1">xfinity cable modem</a> </li>
+<li> <a href="http://10.0.200.151">zyxel 10g switch basement</a> </li>
+<li> <a href="http://10.0.200.105">zyxel 10g switch upstairs</a> </li>
+<li> <a href="http://10.0.200.125">mikrotik hAP access point</a> </li>
+<li> <a href="http://10.0.200.126">mikrotik hAP AC2</a> </li>
+<li> <a href="http://10.0.200.200">mikrotik wAP AC</a> </li>
+<li> <a href="http://10.0.200.150">netgear 24 port switch</a> </li>
+<li> <a href="http://10.0.200.105">netgear gs108t switch upstairs</a> </li>
+<li> <a href="http://10.0.200.175">netgear gs108t switch basement</a> </li>
+<li> <a href="http://10.0.200.225">edgeswitch</a> </li>
+-->
+</ol>
+</div>
+
+</div>
+
+<div id="col" style="left: 50%;">
+
+<h2>Consumer</h2>
+<ul>
+<li> <a href="http://google.com/">Google</a> </li>
+<li> <a href="http://slickdeals.net/forums/forumdisplay.php?f=9">Slickdeals Hot</a> </li>
+<li> <a href="http://www.bensbargains.net/">Ben's Bargains</a> </li>
+<li> <a href="http://www.techbargains.com/">Techbargains</a> </li>
+</ul>
+
+<h2>Personal</h2>
+<ul>
+<li> <a href="https://www.virginiamason.org/myvirginiamason">My Virginia Mason</a> </li>
+<li> <a href="http://catalog.kcls.org">King County Library</a> </li>
+<li> <a href="https://gmail.com/">Gmail alan</a></li>
+<li> <a href="https://portal.pixelfederation.com/en/diggysadventure/">Diggy's Adventure, Portal</a></li>
+<li> <a href="https://apps.facebook.com/diggysadventure/">Diggy's Adventure, FB</a></li>
+<li> <a href="https://www.fitbit.com/">Fitbit Dashboard</a></li>
+</ul>
+
+</div>
+
+<div id="col" style="background: WhiteSmoke; left: 75%;">
+
+<h2>Blogs and Pundits</h2>
+
+<ul>
+<li> <a href="http://dailykos.com">Daily KOS</a> </li>
+<li> <a href="https://democraticunderground.com/index.php">Democratic Underground</a> </li>
+<li> <a href="http://mediamatters.org">Media Matters</a> </li>
+<li> <a href="http://littlegreenfootballs.com">Little Green Footballs</a> </li>
+<li> <a href="http://freethoughtblogs.com/pharyngula/">Pharyngula</a> </li>
+</ul>
+
+<h2>Social Media</h2>
+<ul>
+<li> <a href="http://www.facebook.com/">Facebook</a> </li>
+<li> <a href="http://bsky.app">Bluesky</a> </li>
+<li> <a href="http://reddit.com">Reddit</a> </li>
+<!--
+<li> <a href="http://www.twitter.com/">Twitter</a> </li>
+<li> <a href="http://mastodon.online/home">Mastodon</a> </li>
+-->
+</ul>
+
+</div>
+
+</body>
+</html>
